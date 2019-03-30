@@ -1,0 +1,7 @@
+sudo: required
+services:
+  - docker
+before_install:
+  - docker build -t mayurvarma14/docker-react -f dev.Dockerfile .
+script:
+  - docker run mayurvarma14/docker-react run npm test -- --coverage

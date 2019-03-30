@@ -4,4 +4,4 @@ services:
 before_install:
   - docker build -t mayurvarma14/docker-react -f dev.Dockerfile .
 script:
-  - docker run mayurvarma14/docker-react npm run1 test -- --coverage
+  - docker run mayurvarma14/docker-react npm run test -- --coverage
